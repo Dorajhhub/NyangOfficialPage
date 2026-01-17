@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NyangOfficialPage/static/css/main.67bc0da3.css",
+    "main.js": "/NyangOfficialPage/static/js/main.23a72feb.js",
+    "index.html": "/NyangOfficialPage/index.html",
+    "main.67bc0da3.css.map": "/NyangOfficialPage/static/css/main.67bc0da3.css.map",
+    "main.23a72feb.js.map": "/NyangOfficialPage/static/js/main.23a72feb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.67bc0da3.css",
+    "static/js/main.23a72feb.js"
+  ]
+}
