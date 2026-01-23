@@ -129,7 +129,7 @@
       "title": "메가상자",
       "description": "첫 알파를 축하하세요.",
       "startdate": "2026-1-23",
-      "finishdate": "2026-2-31",
+      "finishdate": "2026-2-27",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -146,7 +146,7 @@
       "title": "냥냥드롭",
       "description": "첫 알파를 축하하세요.",
       "startdate": "2026-1-30",
-      "finishdate": "2026-2-31",
+      "finishdate": "2026-2-27",
       "price": {
         "Coin": 2000,
         "Reputation": 0,
@@ -165,7 +165,7 @@
       "title": "각종 재화박스",
       "description": "첫 알파를 축하하세요.",
       "startdate": "2026-2-06",
-      "finishdate": "2026-2-31",
+      "finishdate": "2026-2-27",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -182,7 +182,7 @@
       "title": "재화",
       "description": "첫 알파를 축하하세요.",
       "startdate": "2026-2-13",
-      "finishdate": "2026-2-31",
+      "finishdate": "2026-2-27",
       "price": {
         "Coin": 1000,
         "Reputation": 0.00005,
@@ -199,7 +199,7 @@
       "title": "Free NyangDrop",
       "description": "Thank you for playing this game! I give you three legendary nyang drop.",
       "startdate": "2026-2-20",
-      "finishdate": "2026-2-31",
+      "finishdate": "2026-2-27",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -217,7 +217,7 @@
       "id": "CoinEnergy",
       "title": "10000 Coin",
       "description": " ",
-      "startdate": "2026-2-27",
+      "startdate": "2026-1-27",
       "finishdate": "2026-4-20",
       "price": {
         "Coin": 0,
