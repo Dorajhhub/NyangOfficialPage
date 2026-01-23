@@ -128,8 +128,8 @@
       "id": "Event_FirstAlpha1",
       "title": "메가상자",
       "description": "첫 알파를 축하하세요.",
-      "startdate": "2026-2-02",
-      "finishdate": "2026-3-31",
+      "startdate": "2026-1-23",
+      "finishdate": "2026-2-31",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -145,8 +145,8 @@
       "id": "Event_FirstAlpha2",
       "title": "냥냥드롭",
       "description": "첫 알파를 축하하세요.",
-      "startdate": "2026-2-16",
-      "finishdate": "2026-3-31",
+      "startdate": "2026-1-30",
+      "finishdate": "2026-2-31",
       "price": {
         "Coin": 2000,
         "Reputation": 0,
@@ -164,8 +164,8 @@
       "id": "Event_FirstAlpha3",
       "title": "각종 재화박스",
       "description": "첫 알파를 축하하세요.",
-      "startdate": "2026-2-23",
-      "finishdate": "2026-3-31",
+      "startdate": "2026-2-06",
+      "finishdate": "2026-2-31",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -181,8 +181,8 @@
       "id": "Event_FirstAlpha4",
       "title": "재화",
       "description": "첫 알파를 축하하세요.",
-      "startdate": "2026-3-14",
-      "finishdate": "2026-3-31",
+      "startdate": "2026-2-13",
+      "finishdate": "2026-2-31",
       "price": {
         "Coin": 1000,
         "Reputation": 0.00005,
@@ -198,8 +198,8 @@
       "id": "Event_FirstAlpha5",
       "title": "Free NyangDrop",
       "description": "Thank you for playing this game! I give you three legendary nyang drop.",
-      "startdate": "2026-3-30",
-      "finishdate": "2026-3-31",
+      "startdate": "2026-2-20",
+      "finishdate": "2026-2-31",
       "price": {
         "Coin": 0,
         "Reputation": 0,
@@ -283,4 +283,5 @@
     }
   ]
 }
+
 
