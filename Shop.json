@@ -280,8 +280,45 @@
           "quantity": 0.00022
         }
       }
+    },
+    {
+      "id": "BugReward",
+      "title": "UIBugFixed",
+      "description": "The ui breaks in certain windows.",
+      "startdate": "2026-1-24",
+      "finishdate": "2026-2-1",
+      "price": {
+        "Coin": 0,
+        "Reputation": 0,
+        "Crystal": 0
+      },
+      "give": {
+        "NyangDrop": {
+          "quantity": 1,
+          "rare": "Legendary",
+          "count": 2
+        }
+      }
+    },
+    {
+      "id": "BugReward1",
+      "title": "UIBugFixed",
+      "description": "The ui breaks in certain windows.",
+      "startdate": "2026-1-24",
+      "finishdate": "2026-2-1",
+      "price": {
+        "Coin": 0,
+        "Reputation": 0,
+        "Crystal": 0
+      },
+      "give": {
+        "MegaBox": {
+          "quantity": 1
+        }
+      }
     }
   ]
 }
+
 
 
