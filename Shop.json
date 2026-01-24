@@ -352,9 +352,29 @@
           "count": 1
         }
       }
+    },
+    {
+      "id": "BugReward3",
+      "title": "VersionError",
+      "description": "Some people didn't enter the game by server error.",
+      "startdate": "2026-1-24",
+      "finishdate": "2026-2-1",
+      "price": {
+        "Coin": 0,
+        "Reputation": 0,
+        "Crystal": 0
+      },
+      "give": {
+        "NyangDrop": {
+          "quantity": 5,
+          "rare": "Common",
+          "count": 2
+        }
+      }
     }
   ]
 }
+
 
 
 
