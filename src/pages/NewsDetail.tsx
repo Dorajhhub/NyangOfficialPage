@@ -9,11 +9,19 @@ import {
 
 interface NewsItem {
   id: number;
-  title: string;
-  content: string;
-  date: string;
-  game: string;
+  t: {
+    ko: string;
+    en: string;
+  };
+  c: {
+    ko: string;
+    en: string;
+  };
+  d: string;
+  g: string;
 }
+
+
 
 const NewsDetail: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -54,8 +62,8 @@ const NewsDetail: React.FC = () => {
       ? newsList
       : newsList.filter((item) =>
           selectedGame === "nyangnyang"
-            ? item.game === "nyangnyang"
-            : item.game !== "nyangnyang"
+            ? item.g === "nyangnyang"
+            : item.g !== "nyangnyang"
         );
 
   if (loading) {
@@ -84,15 +92,15 @@ const NewsDetail: React.FC = () => {
           <div className="p-10 text-white bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800">
             <div className="flex items-center gap-3 mb-6">
               <span className="px-4 py-1.5 text-xs font-black tracking-widest uppercase rounded-full bg-white/20 backdrop-blur-md">
-                {newsItem.game === "nyangnyang" ? "냥냥식당타이쿤" : "GENERAL"}
+                {newsItem.g === "nyangnyang" ? "냥냥식당타이쿤" : "GENERAL"}
               </span>
               <span className="flex items-center gap-1.5 text-xs font-medium opacity-80">
                 <CalendarIcon className="w-4 h-4" />
-                {newsItem.date}
+                {newsItem.d}
               </span>
             </div>
             <h1 className="text-3xl font-black leading-tight tracking-tighter md:text-5xl">
-              {newsItem.title}
+              {newsItem.t.ko}
             </h1>
           </div>
 
@@ -100,7 +108,7 @@ const NewsDetail: React.FC = () => {
           <div className="p-10 md:p-14">
             <div className="prose prose-lg dark:prose-invert max-w-none">
               <p className="leading-[1.8] text-gray-700 dark:text-gray-300 whitespace-pre-line font-light text-lg">
-                {newsItem.content.replace(/\\n/g, "\n")}
+                {newsItem.c.ko.replace(/\\n/g, "\n")}
               </p>
             </div>
 
@@ -164,25 +172,25 @@ const NewsDetail: React.FC = () => {
             <div className="flex items-center justify-between mb-6">
               <span
                 className={`px-4 py-1 rounded-xl text-[10px] font-black tracking-widest uppercase ${
-                  item.game === "nyangnyang"
+                  item.g === "nyangnyang"
                     ? "bg-pink-50 text-pink-600 dark:bg-pink-900/20"
                     : "bg-indigo-50 text-indigo-600 dark:bg-indigo-900/20"
                 }`}
               >
-                {item.game === "nyangnyang" ? "Nyang Tycoon" : "Announcement"}
+                {item.g === "nyangnyang" ? "Nyang Tycoon" : "Announcement"}
               </span>
               <div className="flex items-center gap-1.5 text-xs font-mono text-gray-400">
                 <CalendarIcon className="w-3.5 h-3.5" />
-                {item.date}
+                {item.d}
               </div>
             </div>
 
             <h3 className="mb-4 text-2xl font-bold leading-tight text-gray-900 transition-colors dark:text-white group-hover:text-indigo-600">
-              {item.title}
+              {item.t.ko}
             </h3>
 
             <p className="flex-grow mb-8 font-light leading-relaxed text-gray-500 dark:text-gray-400 line-clamp-2">
-              {item.content}
+              {item.c.ko}
             </p>
 
             <div className="flex items-center justify-between pt-6 mt-auto border-t border-gray-50 dark:border-white/5">

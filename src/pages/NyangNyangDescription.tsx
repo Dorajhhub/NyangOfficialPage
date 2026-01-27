@@ -18,11 +18,18 @@ import {
 
 interface NewsItem {
   id: number;
-  title: string;
-  content: string;
-  date: string;
-  game: string;
+  t: {
+    ko: string;
+    en: string;
+  };
+  c: {
+    ko: string;
+    en: string;
+  };
+  d: string;
+  g: string;
 }
+
 
 const dailyRewardData = [
   { category: "Coin", detail: "100", probability: "43.5" },
@@ -272,7 +279,7 @@ const NyangNyangDescription = () => {
       .then((data) => {
         setNews(
           data.newsList
-            .filter((n: NewsItem) => n.game === "nyangnyang")
+            .filter((n: NewsItem) => n.g === "nyangnyang")
             .slice(0, 3)
         );
       })
@@ -430,10 +437,10 @@ const NyangNyangDescription = () => {
                         className="block p-4 transition-all border border-transparent rounded-2xl bg-gray-50 dark:bg-white/5 hover:border-indigo-500/30 group"
                       >
                         <div className="mb-1 text-xs font-bold text-indigo-500">
-                          {item.date}
+                          {item.d}
                         </div>
                         <h4 className="font-bold text-gray-800 transition-colors dark:text-gray-200 group-hover:text-indigo-600 line-clamp-1">
-                          {item.title}
+                          {item.t.ko}
                         </h4>
                         <div className="flex items-center gap-1 mt-2 text-xs font-bold text-gray-400 group-hover:text-indigo-500">
                           READ MORE <ArrowRight className="w-3 h-3" />
