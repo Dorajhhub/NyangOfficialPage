@@ -267,7 +267,7 @@ const NyangNyangDescription = () => {
     const startDate = new Date(2025, 0, 25);
     if (new Date() >= startDate) setShowProbability(true);
 
-    fetch(`${process.env.PUBLIC_URL}/news.json`)
+    fetch(`${process.env.PUBLIC_URL}/Nyang.json`)
       .then((res) => res.json())
       .then((data) => {
         setNews(

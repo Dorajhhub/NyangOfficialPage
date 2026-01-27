@@ -26,7 +26,7 @@ const NewsDetail: React.FC = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`${process.env.PUBLIC_URL}/news.json`)
+    fetch(`${process.env.PUBLIC_URL}/Nyang.json`)
       .then((response) => {
         if (!response.ok) throw new Error("Failed to fetch");
         return response.json();
