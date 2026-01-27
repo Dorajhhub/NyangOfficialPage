@@ -215,7 +215,7 @@
     },
     {
       "id": "CoinEnergy",
-      "title": "10000 Coin",
+      "title": "CoinEnergy",
       "description": " ",
       "startdate": "2026-1-27",
       "finishdate": "2026-4-20",
@@ -369,6 +369,25 @@
           "quantity": 5,
           "rare": "Common",
           "count": 2
+        }
+      }
+    },
+    {
+      "id": "DownloadError",
+      "title": "냥냥식당타이쿤 다운로드 및 업데이트 불가상태",
+      "description": "외부 냥식타 다운로드 시스템 오류로 인한 사과보상",
+      "startdate": "2026-1-27",
+      "finishdate": "2026-2-01",
+      "price": {
+        "Coin": 0,
+        "Reputation": 0,
+        "Crystal": 0
+      },
+      "give": {
+        "NyangDrop": {
+          "quantity": 1,
+          "rare": "Common",
+          "count": 8
         }
       }
     }
