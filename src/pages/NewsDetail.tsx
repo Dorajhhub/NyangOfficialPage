@@ -3,7 +3,6 @@ import { useSearchParams, Link } from "react-router-dom";
 import {
   ArrowLeftIcon,
   CalendarIcon,
-  TagIcon,
   NewspaperIcon,
   ChevronRightIcon,
 } from "@heroicons/react/24/solid";
@@ -22,7 +21,7 @@ const NewsDetail: React.FC = () => {
   const [newsList, setNewsList] = useState<NewsItem[]>([]);
   const [newsItem, setNewsItem] = useState<NewsItem | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   const [selectedGame, setSelectedGame] = useState<string>("all");
 
   useEffect(() => {
@@ -68,7 +67,6 @@ const NewsDetail: React.FC = () => {
     );
   }
 
-  // --- DETAIL VIEW ---
   if (id && newsItem) {
     return (
       <div className="max-w-3xl px-6 py-12 mx-auto animate-fade-in-up">
@@ -119,7 +117,6 @@ const NewsDetail: React.FC = () => {
     );
   }
 
-  // --- LIST VIEW ---
   return (
     <div className="max-w-6xl px-6 py-16 mx-auto">
       <div className="mb-16 text-center">

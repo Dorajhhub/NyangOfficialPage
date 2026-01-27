@@ -16,7 +16,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-// --- Types ---
 interface NewsItem {
   id: number;
   title: string;
@@ -142,7 +141,7 @@ const nyangDropData = [
   { category: "Ultra", detail: "메가 박스", probability: "7.0" },
   { category: "Ultra", detail: "새로운 테이블", probability: "3.0" },
 
-  // --- GOD 등급 (제공된 코드의 마지막 else 부분) ---
+
   { category: "GOD", detail: "메가 박스", probability: "15.0" },
   { category: "GOD", detail: "6000 코인", probability: "40.0" },
   { category: "GOD", detail: "0.05 호감도", probability: "30.0" },
@@ -150,7 +149,7 @@ const nyangDropData = [
   { category: "GOD", detail: "새로운 테이블", probability: "7.0" },
 ];
 
-// --- Sub-Components ---
+
 const ProbabilityTable: React.FC<{
   title: string;
   data: any[];
@@ -264,7 +263,7 @@ const NyangNyangDescription = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Show probability after a specific date (logic preserved)
+
     const startDate = new Date(2025, 0, 25);
     if (new Date() >= startDate) setShowProbability(true);
 

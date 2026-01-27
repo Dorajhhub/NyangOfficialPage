@@ -15,7 +15,6 @@ function App() {
   return (
     <HashRouter> 
       <Routes>
-        // Main app routes with layout
         <Route path="/" element={<NyangNyangDescription />} />
         <Route path="/news" element={<NewsDetail />} />
         <Route path="*" element={<Navigate to="/" replace />} />
