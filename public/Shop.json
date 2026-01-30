@@ -218,6 +218,21 @@
       "reward": {
         "NyangDrop": { "qty": 1, "rarity": "Common", "cnt": 8 }
       }
+    },
+    {
+      "id": "CompanyChange",
+      "title": { "ko": "회사 이름 변경으로 인한 보상", "en": "Download Error Compensation" },
+      "desc": { "ko": "회사 이름 변경으로 인한 보상", "en": "Compensation for external download system error." },
+      "start": "2026-01-30",
+      "end": "2026-02-07",
+      "cost": { "Coin": 0, "Reputation": 0, "Crystal": 0 },
+      "reward": {
+        "NyangDrop": { "qty": 5, "rarity": "Common", "cnt": 4 },
+        "Coin": {"qty": 5000},
+        "Crystal": {"qty": 100},
+        "MegaBox": {"qty": 3},
+        "NyangPassXP": {"qty": 1000}
+      }
     }
   ]
 }
