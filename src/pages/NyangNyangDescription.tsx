@@ -309,7 +309,7 @@ const NyangNyangDescription = () => {
         </div>
       </Modal>
 
-      <div className="px-6 pb-24 mx-auto space-y-16 max-w-7xl">
+      <div className="px-4 sm:px-6 lg:px-8 pb-24 mx-auto space-y-16 md:space-y-24 max-w-7xl animate-fade-in-up">
         {/* Hero Section */}
         <div className="relative group overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-rose-400 via-fuchsia-500 to-indigo-600 p-1 px-1 shadow-2xl transition-all duration-500 hover:shadow-indigo-500/20">
           <div className="relative bg-white dark:bg-slate-950 rounded-[2.4rem] p-10 md:p-16 overflow-hidden">
@@ -318,11 +318,11 @@ const NyangNyangDescription = () => {
             <div className="absolute w-64 h-64 rounded-full -bottom-24 -left-24 bg-indigo-500/10 blur-3xl animate-pulse" />
 
             <div className="relative z-10 flex flex-col items-center text-center">
-              <div className="mb-8 text-7xl animate-float">😸</div>
-              <h1 className="mb-6 text-5xl font-black tracking-tighter text-transparent md:text-7xl bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text">
+              <div className="mb-6 text-7xl animate-float">😸</div>
+              <h1 className="mb-4 text-5xl font-black tracking-tighter text-transparent md:text-7xl bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text">
                 냥냥식당타이쿤
               </h1>
-              <p className="max-w-2xl mb-10 text-lg font-light leading-relaxed text-gray-500 md:text-xl dark:text-gray-400">
+              <p className="max-w-2xl mb-8 text-lg font-light leading-relaxed text-gray-500 md:text-xl dark:text-gray-400">
                 지친 일상 속, 고양이들이 운영하는 작은 식당의 주인이 되어보세요.{" "}
                 <br className="hidden md:block" />
                 맛있는 요리와 따뜻한 인테리어로 최고의 힐링 공간을 만듭니다.
@@ -330,7 +330,7 @@ const NyangNyangDescription = () => {
               <div className="flex flex-col justify-center w-full gap-4 sm:flex-row">
                 <a
                   href="https://kjh12.itch.io/nyangrestauranttycoon"
-                  className="flex items-center justify-center gap-3 px-8 py-4 font-bold text-white transition-all bg-gray-900 shadow-lg dark:bg-white dark:text-gray-900 rounded-2xl hover:scale-105 active:scale-95"
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 font-bold text-white transition-all duration-300 bg-indigo-600 shadow-lg shadow-indigo-500/20 dark:bg-indigo-500 rounded-2xl hover:bg-indigo-700 dark:hover:bg-indigo-600 hover:scale-105 active:scale-95"
                 >
                   <ArrowDownTrayIcon className="w-5 h-5" />
                   지금 무료 다운로드
@@ -344,17 +344,17 @@ const NyangNyangDescription = () => {
           {/* Main Content */}
           <div className="space-y-12 lg:col-span-8">
             {/* Intro Card */}
-            <section className="p-8 bg-white border border-gray-100 dark:bg-slate-900/50 rounded-3xl dark:border-white/5">
-              <div className="flex items-center gap-3 mb-8">
+            <section className="p-8 bg-white border border-gray-100 shadow-xl dark:bg-slate-900/70 rounded-3xl dark:border-white/5 backdrop-blur-md">
+              <div className="flex items-center gap-4 mb-6">
                 <div className="flex items-center justify-center w-10 h-10 bg-rose-100 dark:bg-rose-900/30 rounded-xl text-rose-600">
                   <Gamepad2 className="w-6 h-6" />
                 </div>
-                <h2 className="text-2xl font-black tracking-tight uppercase dark:text-white">
+                <h2 className="text-2xl font-black tracking-tight text-gray-900 uppercase dark:text-white">
                   Game Introduction
                 </h2>
               </div>
 
-              <p className="mb-8 text-lg font-light leading-relaxed text-gray-600 dark:text-gray-300">
+              <p className="mb-8 text-lg font-light leading-relaxed text-gray-600 dark:text-gray-400">
                 냥냥식당타이쿤은 단순한 경영 게임을 넘어, 고양이 손님들과의
                 교감을 중시합니다. 재료를 직접 수급하고, 레시피를 연구하며,
                 식당의 평판을 높여 전 세계 고양이들이 찾아오는 명소로 만드세요.
@@ -376,13 +376,13 @@ const NyangNyangDescription = () => {
                 ].map((item, i) => (
                   <div
                     key={i}
-                    className="p-6 transition-all border border-transparent rounded-2xl bg-gray-50 dark:bg-white/5 hover:border-indigo-500/20"
+                    className="p-6 transition-all duration-300 border border-gray-100 rounded-2xl bg-slate-50 dark:bg-slate-900/50 dark:border-white/10 hover:shadow-lg hover:border-indigo-500/20 hover:-translate-y-1"
                   >
                     <div className="mb-3 text-3xl">{item.icon}</div>
-                    <div className="mb-1 font-bold dark:text-white">
+                    <div className="mb-1 font-bold text-gray-800 dark:text-white">
                       {item.label}
                     </div>
-                    <div className="text-sm text-gray-500">{item.desc}</div>
+                    <div className="text-sm text-gray-500 dark:text-gray-400">{item.desc}</div>
                   </div>
                 ))}
               </div>
@@ -391,11 +391,11 @@ const NyangNyangDescription = () => {
             {/* Probability Tables */}
             {showProbability && (
               <section className="animate-fade-in-up">
-                <div className="flex items-center gap-3 mb-8">
+                <div className="flex items-center gap-4 mb-6">
                   <div className="flex items-center justify-center w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-xl text-amber-600">
                     <SparklesIcon className="w-6 h-6" />
                   </div>
-                  <h2 className="text-2xl font-black tracking-tight uppercase dark:text-white">
+                  <h2 className="text-2xl font-black tracking-tight text-gray-900 uppercase dark:text-white">
                     Probabilities
                   </h2>
                 </div>
@@ -421,22 +421,22 @@ const NyangNyangDescription = () => {
           <aside className="space-y-8 lg:col-span-4">
             <div className="sticky top-24">
               {/* Sidebar News */}
-              <div className="p-6 bg-white border border-gray-100 dark:bg-slate-900/50 rounded-3xl dark:border-white/5">
-                <h3 className="flex items-center gap-2 mb-6 text-xl font-black dark:text-white">
+              <div className="p-6 bg-white border border-gray-100 shadow-xl dark:bg-slate-900/70 rounded-3xl dark:border-white/5 backdrop-blur-md">
+                <h3 className="flex items-center gap-3 mb-6 text-xl font-black text-gray-900 dark:text-white">
                   <SparklesIcon className="w-5 h-5 text-amber-500" />
                   최신 소식
                 </h3>
                 <div className="space-y-4">
                   {loading ? (
-                    <div className="h-40 bg-gray-100 dark:bg-white/5 rounded-2xl animate-pulse" />
+                    <div className="h-40 bg-slate-100 dark:bg-white/5 rounded-2xl animate-pulse" />
                   ) : (
                     news.map((item) => (
                       <a
                         key={item.id}
                         href={`#/news?id=${item.id}`}
-                        className="block p-4 transition-all border border-transparent rounded-2xl bg-gray-50 dark:bg-white/5 hover:border-indigo-500/30 group"
+                        className="block p-4 transition-all duration-300 border border-transparent rounded-2xl bg-slate-50 dark:bg-slate-900/50 hover:bg-white hover:shadow-md hover:border-indigo-100 dark:hover:bg-slate-800 dark:hover:border-indigo-500/20 group"
                       >
-                        <div className="mb-1 text-xs font-bold text-indigo-500">
+                        <div className="mb-1 text-xs font-bold text-indigo-600 dark:text-indigo-400">
                           {item.d}
                         </div>
                         <h4 className="font-bold text-gray-800 transition-colors dark:text-gray-200 group-hover:text-indigo-600 line-clamp-1">

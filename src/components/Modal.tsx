@@ -12,18 +12,18 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-60"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 transition-opacity duration-300 bg-black/60 backdrop-blur-sm animate-fade-in"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-lg p-5 mx-4 transition-all duration-300 ease-out transform bg-white rounded-lg shadow-xl"
+        className="relative w-full max-w-lg p-6 mx-4 transition-all duration-300 ease-out transform bg-white dark:bg-slate-900 rounded-2xl shadow-2xl animate-fade-in-up"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="flex items-start justify-between pb-4 border-b rounded-t">
-          <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
+        <div className="flex items-start justify-between pb-4 border-b border-slate-200 dark:border-slate-700">
+          <h3 className="text-xl font-bold text-slate-900 dark:text-white">{title}</h3>
           <button
             type="button"
-            className="inline-flex items-center p-1.5 ml-auto text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900"
+            className="inline-flex items-center p-1.5 ml-auto text-sm text-slate-400 bg-transparent rounded-lg hover:bg-slate-200 hover:text-slate-900 dark:hover:bg-slate-700 dark:hover:text-white"
             onClick={onClose}
             aria-label="Close modal"
           >
@@ -41,7 +41,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
             </svg>
           </button>
         </div>
-        <div className="pt-4 text-gray-700">{children}</div>
+        <div className="pt-5 text-slate-700 dark:text-slate-300">{children}</div>
       </div>
     </div>
   );

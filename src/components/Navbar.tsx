@@ -48,12 +48,8 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
 
   const navLinks = [
     { name: "홈", path: "/" },
-    { name: "서버 체크", path: "/ping" },
-    { name: "냥냥식당타이쿤", path: "/nyangnyang" },
-    { name: "BlastLoop", path: "/blastloop" },
-    { name: "미니게임", path: "/minigames" },
     { name: "뉴스", path: "/news" },
-    { name: "버그 제보", path: "/bugs" },
+    { name: "상점", path: "/store" },
   ];
 
   // Close mobile menu on escape key press
@@ -72,7 +68,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-lg border-b border-gray-200/50 dark:border-slate-700/50"
+          ? "bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-md border-b border-slate-200/50 dark:border-slate-800/50"
           : "bg-transparent"
       }`}
       aria-label="Main navigation"
@@ -86,11 +82,11 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
               className="flex items-center gap-3 rounded group focus:outline-none focus:ring-2 focus:ring-indigo-500"
               aria-label="Home"
             >
-              <div className="flex items-center justify-center w-10 h-10 text-xl transition-transform duration-300 shadow-lg rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 group-hover:scale-110">
+              <div className="flex items-center justify-center w-10 h-10 text-xl transition-transform duration-300 shadow-lg rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 group-hover:scale-110 group-hover:rotate-12">
                 🎮
               </div>
-              <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-300">
-                jihucompany
+              <span className="text-xl font-black tracking-tighter text-slate-800 dark:text-white">
+                MinDevX
               </span>
             </NavLink>
           </div>
@@ -102,10 +98,10 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) =>
-                  `px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 relative group focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+                  `px-4 py-2 rounded-lg text-sm font-semibold transition-colors duration-300 relative group focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-950 ${
                     isActive
-                      ? "text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/20"
-                      : "text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+                      ? "text-indigo-600 dark:text-indigo-400"
+                      : "text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                   }`
                 }
                 aria-current={
@@ -113,16 +109,17 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
                 }
               >
                 {link.name}
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-600 transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100 origin-left"></span>
+                <span className="absolute bottom-0 left-1/2 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-1/2 group-hover:left-1/2"></span>
+                <span className="absolute bottom-0 right-1/2 w-0 h-0.5 bg-indigo-500 transition-all duration-300 group-hover:w-1/2 group-hover:right-1/2"></span>
               </NavLink>
             ))}
 
-            <div className="w-px h-6 mx-4 bg-gray-300 dark:bg-slate-700"></div>
+            <div className="w-px h-5 mx-2 bg-slate-200 dark:bg-slate-700"></div>
 
             <button
               onClick={toggleTheme}
               disabled={isSeasonal}
-              className="p-2 text-gray-500 transition-all duration-300 rounded-full hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed hover:rotate-12 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="p-2 text-slate-500 transition-all duration-300 rounded-full hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed hover:rotate-12 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-slate-950"
               aria-label={
                 theme === "light"
                   ? "Switch to dark mode"
@@ -142,7 +139,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
             <button
               onClick={toggleTheme}
               disabled={isSeasonal}
-              className="p-2 text-gray-500 transition-colors rounded-full hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="p-2 text-slate-500 transition-colors rounded-full hover:bg-slate-100 dark:text-slate-400 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               aria-label={
                 theme === "light"
                   ? "Switch to dark mode"
@@ -157,7 +154,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
             </button>
             <button
               onClick={toggleMobileMenu}
-              className="p-2 text-gray-600 transition-colors rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="p-2 text-slate-600 transition-colors rounded-lg dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               aria-expanded={isMobileMenuOpen}
               aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
@@ -180,7 +177,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
         ></div>
       )}
       <div
-        className={`md:hidden fixed inset-y-0 right-0 z-50 w-full max-w-xs bg-white/95 dark:bg-slate-900/95 backdrop-blur-xl transition-transform duration-300 ease-in-out transform ${
+        className={`md:hidden fixed inset-y-0 right-0 z-50 w-full max-w-xs bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl transition-transform duration-300 ease-in-out transform ${
           isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
         aria-modal={isMobileMenuOpen}
@@ -190,7 +187,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
           <div className="flex justify-end p-4">
             <button
               onClick={toggleMobileMenu}
-              className="p-2 text-gray-600 rounded-lg dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="p-2 text-slate-600 rounded-lg dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               aria-label="Close menu"
             >
               <XMarkIcon className="w-7 h-7" />
@@ -205,7 +202,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme, setTheme, isSeasonal }) => {
                   `block px-4 py-4 rounded-xl text-lg font-medium transition-all focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
                     isActive
                       ? "bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400"
-                      : "text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-slate-800"
+                      : "text-slate-700 dark:text-slate-200 hover:bg-slate-50 dark:hover:bg-slate-800"
                   }`
                 }
                 onClick={toggleMobileMenu}
