@@ -118,7 +118,7 @@
       "end": "2026-02-27",
       "cost": { "Coin": 0, "Reputation": 0, "Crystal": 0 },
       "reward": {
-        "NyangDrop": { "qty": 1, "rarity": "Legendary", "cnt": 3 }
+        "NyangDrop": { "qty": 1, "rarity": "Legendary", "cnt": 1 }
       }
     },
     {
