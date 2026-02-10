@@ -38,6 +38,19 @@
       },
       "d": "2026-01-24",
       "g": "nyangnyang"
+    },
+    {
+      "id": 4,
+      "t": {
+        "ko": "메가상자 버그에 관해",
+        "en": "Regarding the Mega Box Bug"
+      },
+      "c": {
+        "ko": "유저 여러분 메가상자 시스템에 문제가 있었습니다. \n 이에 대해 죄송하게 생각합니다. \n 메가상자는 아이템 수가 동일한 확률이 아닌 정해진 확률로 아이템이 나오는 시스템이었으나 그 확률이 잘못 설정되어 있었습니다. 진짜 확률은 모두 동일한 확률로 등장합니다. \n\n\n 매우 죄송하며 사과 보상으로 다음과 같이 준비했습니다. \n 1.메가상자 버그에 관한 보상: 메가상자 10개, 냥냥드롭 GOD 분열 8개를 1개 지급 \n\n 보상이 지급되기 까지 최대 1시간 까지 소유될 수 있으며 앞으로는 이런 사고가 없도록 주의하겠습니다. \n 대단히 죄송합니다.",
+        "en": "Dear Players,\nWe discovered an issue with the Mega Box system and sincerely apologize.\nThe Mega Box was intended to use fixed probabilities rather than equal chances for each item, but the probabilities were set incorrectly.\nAs a result, all items were appearing with the same probability.\n\nWe are very sorry for this mistake and have prepared the following compensation:\n1. Compensation for the Mega Box bug: 10 Mega Boxes, 1 NyangNyang Drop GOD Fragment (x8)\n\nThe rewards may take up to 1 hour to be delivered to your account.\nWe will do our best to prevent this from happening again.\nWe sincerely apologize for the inconvenience."
+      },
+      "d": "2026-01-24",
+      "g": "nyangnyang"
     }
   ]
 }
