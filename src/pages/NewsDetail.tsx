@@ -68,7 +68,7 @@ const NewsDetail: React.FC = () => {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center">
         <div className="w-10 h-10 mb-4 border-4 border-indigo-500 rounded-full border-t-transparent animate-spin"></div>
-        <p className="text-gray-500 animate-pulse">Loading updates...</p>
+        <p className="text-gray-500 animate-pulse">Loading news data  </p>
       </div>
     );
   }

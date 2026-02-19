@@ -182,7 +182,7 @@ const Store = () => {
                         <li className="flex items-center">
                           <span className="mr-2">💧</span>
                           <span>
-                            냥 드롭 ({item.reward.NyangDrop.rarity}) x
+                            냥 드롭 ({item.reward.NyangDrop.rarity})와 {item.reward.NyangDrop.cnt}의 분열 x
                             {item.reward.NyangDrop.qty}
                           </span>
                         </li>

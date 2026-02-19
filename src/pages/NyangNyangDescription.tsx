@@ -38,14 +38,14 @@ const dailyRewardData = [
   { category: "Affection", detail: "0.002", probability: "1" },
   { category: "Crystal", detail: "1", probability: "3.5" },
   { category: "MegaBox", detail: "1", probability: "5" },
-  { category: "NyangDrop", detail: "1", probabiliy: "5" },
+  { category: "NyangDrop", detail: "1", probability: "5" },
 ];
 
 const megaBoxData = [
   {
     category: "Reward Count",
-    detail: "7~15개 보상 랜덤 획득",
-    probability: "100",
+    detail: "7~15개 보상 랜덤 획득(각각의 보상 수)의 확률",
+    probability:"각각 11.11",
   },
   { category: "Coin", detail: "100 코인", probability: "68.0" },
   { category: "Coin", detail: "500 코인", probability: "7.0" },
@@ -302,7 +302,7 @@ const NyangNyangDescription = () => {
           </p>
           <div className="p-4 border border-indigo-100 rounded-2xl bg-indigo-50 dark:bg-indigo-500/10 dark:border-indigo-500/20">
             <p className="text-sm font-medium text-indigo-700 dark:text-indigo-300">
-              💡 한 번의 개봉으로 최소 9개에서 최대 15개의 보상이 쏟아집니다!
+              💡 한 번의 개봉으로 최소 7개에서 최대 15개의 보상이 쏟아집니다!
               식당 성장을 위한 필수 아이템들을 획득해 보세요.
             </p>
           </div>
@@ -318,7 +318,7 @@ const NyangNyangDescription = () => {
             <div className="absolute w-64 h-64 rounded-full -bottom-24 -left-24 bg-indigo-500/10 blur-3xl animate-pulse" />
 
             <div className="relative z-10 flex flex-col items-center text-center">
-              <div className="mb-6 text-7xl animate-float">😸</div>
+            <div className="mb-6 text-7xl animate-float">🐾</div>
               <h1 className="mb-4 text-5xl font-black tracking-tighter text-transparent md:text-7xl bg-gradient-to-r from-rose-500 to-indigo-600 bg-clip-text">
                 냥냥식당타이쿤
               </h1>
@@ -326,6 +326,10 @@ const NyangNyangDescription = () => {
                 지친 일상 속, 고양이들이 운영하는 작은 식당의 주인이 되어보세요.{" "}
                 <br className="hidden md:block" />
                 맛있는 요리와 따뜻한 인테리어로 최고의 힐링 공간을 만듭니다.
+                <br className="hidden md:block" />
+                지원 대상: 안드로이드 기기
+                <br/>
+                지원 예정 대상: pc, web
               </p>
               <div className="flex flex-col justify-center w-full gap-4 sm:flex-row">
                 <a
@@ -334,6 +338,13 @@ const NyangNyangDescription = () => {
                 >
                   <ArrowDownTrayIcon className="w-5 h-5" />
                   지금 무료 다운로드
+                </a>
+                <a
+                  href="https://nyangrestauranttyccon-for-web.pages.dev/" 
+                  className="inline-flex items-center justify-center gap-3 px-8 py-4 font-bold text-white transition-all duration-300 bg-indigo-600 shadow-lg shadow-indigo-500/20 dark:bg-indigo-500 rounded-2xl hover:bg-indigo-700 dark:hover:bg-indigo-600 hover:scale-105 active:scale-95"
+                >
+                  <ArrowDownTrayIcon className="w-5 h-5" />
+                  Web 버전 플레이 하기
                 </a>
               </div>
             </div>

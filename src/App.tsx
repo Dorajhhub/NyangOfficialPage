@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import NyangNyangDescription from "./pages/NyangNyangDescription";
 import NewsDetail from "./pages/NewsDetail";
 import Store from "./pages/Store";
+import License from "./pages/License";
 import "./App.css";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path="/" element={<NyangNyangDescription />} />
             <Route path="/news" element={<NewsDetail />} />
             <Route path="/store" element={<Store />} />
+            <Route path="/license" element={<License />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
