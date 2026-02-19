@@ -51,6 +51,19 @@
       },
       "d": "2026-02-10",
       "g": "nyangnyang"
+    },
+    {
+      "id": 5,
+      "t": {
+        "ko": "라이선스 페이지 오픈 안내",
+        "en": "Regarding the Mega Box Bug"
+      },
+      "c": {
+        "ko": "유저 여러분, 라이선스 페이지가 오픈되었습니다. \n https://nyangofficialpage.pages.dev/#/license 해당 사이트로 접속하여 라이선스를 확인해주시기 바랍니다. \n 현재 기술적 이슈로 앱에 라이선스 보기 버튼을 추가할 수 없기에 확률 보기를 누른 다음에 밑으로 내려서 라이선스를 눌러주시기 바랍니다. \n 감사합니다.",
+        "en": "Dear Players,\nWe discovered an issue with the Mega Box system and sincerely apologize.\nThe Mega Box was intended to use fixed probabilities rather than equal chances for each item, but the probabilities were set incorrectly.\nAs a result, all items were appearing with the same probability.\n\nWe are very sorry for this mistake and have prepared the following compensation:\n1. Compensation for the Mega Box bug: 10 Mega Boxes, 1 NyangNyang Drop GOD Fragment (x8)\n\nThe rewards may take up to 1 hour to be delivered to your account.\nWe will do our best to prevent this from happening again.\nWe sincerely apologize for the inconvenience."
+      },
+      "d": "2026-02-19",
+      "g": "nyangnyang"
     }
   ]
 }
