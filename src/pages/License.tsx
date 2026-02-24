@@ -38,7 +38,15 @@ const License: React.FC = () => {
   const licenseList: LicenseItem[] = [
     {
       name: "Noto Sans KR",
-      path: `${process.env.PUBLIC_URL}/font-kr.txt`,
+      path: `${process.env.PUBLIC_URL}/license/font-kr.txt`,
+    },
+    {
+      name: "SQLite4Unity3d",
+      path: `${process.env.PUBLIC_URL}/license/sqlite.txt`,
+    },
+    {
+      name: "Chaos.NaCl",
+      path: `${process.env.PUBLIC_URL}/license/Chaos.NaCl.txt`,
     },
     // 예시: 폰트 라이선스 추가
     // {
