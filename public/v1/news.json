@@ -77,6 +77,32 @@
       },
       "d": "2026-02-19",
       "g": "nyangnyang"
+    },
+    {
+      "id": 7,
+      "t": {
+        "ko": "라이선스 정보",
+        "en": "License Information"
+      },
+      "c": {
+        "ko": "SQLite4Unity3d\n\nThe MIT License (MIT)\n\nCopyright (c) 2014 Roberto Huertas\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+        "en": "License information is provided in the Korean section."
+      },
+      "d": "2026-02-24",
+      "g": "nyangnyang"
+    },
+    {
+      "id": 8,
+      "t": {
+        "ko": "라이선스 정보",
+        "en": "License Information"
+      },
+      "c": {
+        "ko": "Chaos.NaCl \n Chaos.NaCl (public domain / MIT portions) \n https://github.com/CodesInChaos/Chaos.NaCl",
+        "en": "License information is provided in the Korean section."
+      },
+      "d": "2026-02-24",
+      "g": "nyangnyang"
     }
   ]
 }
