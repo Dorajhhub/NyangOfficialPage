@@ -103,6 +103,19 @@
       },
       "d": "2026-02-24",
       "g": "nyangnyang"
+    },
+    {
+      "id": 9,
+      "t": {
+        "ko": "냥식타의 미래에 대해서",
+        "en": "About NRT's future"
+      },
+      "c": {
+        "ko": "안녕하세요. 냥식타 관리자입니다. \n 냥식타는 이 시간 이후로 임시 개발 중단이 될 예정입니다. 하지만 섭종을 하는 것이 아니기에 언젠가 돌아올 수 있지만 기대하지 않은 것이 좋을 거 같습니다. \n 감사합니다.",
+        "en": "Hello. I'm a manager of NRT. \n NRT will stop develop after today. But we are not stop service, so we sometimes come back but do not get your hopes up. \n Thanks."
+      },
+      "d": "2026-03-22",
+      "g": "nyangnyang"
     }
   ]
 }
